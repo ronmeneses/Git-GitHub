@@ -18,3 +18,8 @@ body{
 #cabecera samp{
     margin-left: 30px;
 }
+#like{
+    text-align: left;
+    font-weight: bold;
+    padding-left: 20px;
+}
