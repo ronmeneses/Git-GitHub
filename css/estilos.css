@@ -2,7 +2,7 @@ body{
     text-align: center;
     color: rgb(6, 83, 56);
     background: rgb(214, 174, 125);
-    font-family: 'Courier New', Courier, monospace;
+    font-family:Arial, Helvetica, sans-serif;
 }
 #caja{
     border: dodgerblue solid;
