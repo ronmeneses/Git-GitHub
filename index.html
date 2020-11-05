@@ -36,6 +36,23 @@
                 3.- Agregamos la llave privada con ssh-add -K ~/.ssh/id_rsa si encaso te da algun error solo borra -K y listo.
                 
             </p>
+            <h3>Alias</h3>
+            <p>
+                1.- alias nombraAlias="git log --all --graph --decorate --oneline"
+            </p>
+            <h3>Tag y versiones en Git y GitHu</h3>
+            <p>
+                1.- Ver los tag --> git tag <br>
+                2.- Crear un tag con el comando git tag -a nombreDeTag idCommitDeDondeQuieresCrearElTag -m "mensaje que tendra el tag" <br>
+                3.- Para poder ver a que commit estan asignados los tags --> git show-ref --tags. <br>
+                4.- Enviar los tags o tag al repositorio en GitHub. Antes de reaizar cualquier push100pre realiza antes un pull. <br>
+                <pre>4.1.- git pull origin master
+                    Para enviar un solo tag
+                        4.2.- git push origin nombreDelTag
+                    Para enviar todos los tags
+                        4.3.- git push origin --tags
+                </pre>
+            </p>
 
         </div>
         <p id="like">Dale like y suscribete</p>
