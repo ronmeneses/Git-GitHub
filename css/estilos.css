@@ -23,3 +23,8 @@ body{
     font-weight: bold;
     padding-left: 20px;
 }
+footer{
+    background: aqua;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
