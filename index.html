@@ -55,9 +55,26 @@
                 </pre>
                 5.- Eliminamos el tag de forma local --> git tag -d nombreDeTag. <br>
                 6.- Si el tag fue subido a nuestro repositorio se elimina --> git push origin :refs/tags/nombreDelTag. el comando no borra el tag en local. <br>
-
+            <h3>Realizar contribuciones a proyectos open source</h3>
+            <p>
+                1.- Primero debes de realizar el Fork del poyecto al cual quieras contribuir, esto crear un repositorio con el mismo nobre pero en tu perfil.<br>
+                2.- Decargamos el proyecto desde tu perfil  a tu local (computadora) para que puedas realizar tus cambios con --> git clone linkDelProyecto. <br>
+                3.- Una vez realizado tus commits el push que realiaces sera solo al de tu perfil (el Fork). <br>
+                4.- GitHub sabe que tu repositorio es un fork de otro proyecto, y para que tus cambios sean aceptados debes realizar un Pull Request al proyecto original y esperar quesea aceptado. <br>
+                5.- Pero si el dueño del repositorio original tambien trabajo en su repositorio entonces tendremos un problema ya q nosotros no tendremos esos cambios. Y GitHub te notificara que te faltan los cambios del repositorio original<br>
+                6.- Y para que tu puedas tener los cambios del repositorio original solo tienes que hacer un pull request de los cambios en tu perfil y listo. <br>
+                7.- Pero hay otra manera el cual es de pros :) y eso es por consola con los siguietes comandos. <br>
+                    <pre>7.1.- Actualmente tenemos el remoto origin apuntando nuestro repositorio
+                                pero necesitamos otro remoto apuntando al link del repo original.
+                                Que normalmente tiene el nombre de upstream, y el comando es el siguiente.
+                                --> git remote add upstream https://LinkDelRepositorioOriginal.
+                         7.2.- Ahora solo necesitamos traer los cambios del repo original con un pull con el nuevo remoto.
+                                --> git pull upstream master
+                         7.3.- EL comando anterio nos trajo los commits del repo original ahora solo resta enviar esos commits
+                               a nuestro repositorios (Fork) a esto se lo conoce como fusion (even).
+                               --> git push origin master
+                    </pre>
             </p>
-
         </div>
         <p id="like">Dale like y suscribete</p>
         <footer> Pie de pagina terminado en KIMO</footer>
